@@ -4,7 +4,7 @@ const unsigned int LED{17}; // define a constant for the LED pin
 const unsigned int MTR_HI{13};
 const unsigned int MTR_LO{14};
 unsigned int Lo = 0;
-unsigned int Hi = 75;
+unsigned int Hi = 255;
 bool reverse = 0;
 
 
@@ -58,7 +58,7 @@ void loop()
             }
         }
         else {
-            if(Hi < 75) {
+            if(Hi < 255) {
                 Hi++;
                 Lo--;
             }
